@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.next/
+build/
+coverage/
+.DS_Store
+*.log
+.env
+.env.local
+!.env.example
+!.env.local.example
+service-account.json
+docs/
+out/
+frontend/out/
+frontend/.next/

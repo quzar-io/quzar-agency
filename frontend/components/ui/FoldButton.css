@@ -1,0 +1,44 @@
+.fold-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 24px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(225deg, transparent 11.31px, var(--color-brand-primary) 0);
+  font-size: 12px;
+}
+
+.fold-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(225deg, transparent 50%, rgba(255, 255, 255, 0.4) 50%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.fold-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.fold-btn:active {
+  transform: translateY(0);
+}
+
+.fold-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

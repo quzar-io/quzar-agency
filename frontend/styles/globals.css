@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-void: #000000;
+  --color-brand-bone: #ffffff;
+  --color-brand-ash: #bdbdbd;
+  --color-brand-smoke: #9a9a9a;
+  --color-brand-plum: #8052ff;
+  --color-brand-amber: #ffb829;
+  --color-brand-lichen: #15846e;
+
+  --color-brand-bg: #000000;
+  --color-brand-card: #000000;
+  --color-brand-primary: #8052ff;
+  --color-brand-secondary: #ffb829;
+  --color-brand-text: #bdbdbd;
+  --color-brand-heading: #ffffff;
+  --color-brand-border: #333333;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-inter), ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased selection:bg-brand-primary/30 selection:text-brand-heading;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-brand-heading tracking-tight;
+  }
+
+  input, textarea {
+    @apply bg-transparent focus:outline-none focus:ring-0;
+  }
+
+  /* Fix browser autofill background */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  textarea:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #000000 inset !important;
+      -webkit-text-fill-color: white !important;
+      transition: background-color 5000s ease-in-out 0s;
+  }
+}
