@@ -19,14 +19,26 @@ export const submitContactForm = async (req: Request, res: Response) => {
 
   try {
     const db = getDb();
+    
+    // 1. Save or update the core contact info (using email as ID for deduplication)
+    const contactRef = db.collection('contacts').doc(email.toLowerCase());
+    await contactRef.set({
+      name,
+      email: email.toLowerCase(),
+      mobile,
+      lastContactedAt: new Date().toISOString(),
+    }, { merge: true });
+
+    // 2. Save the full form submission with all details
     const docRef = await db.collection('contact_submissions').add({
       name,
-      email,
+      email: email.toLowerCase(),
       mobile,
       service,
       project,
       createdAt: new Date().toISOString(),
       status: 'new',
+      contactId: contactRef.id
     });
 
     console.log(`[Contact] New submission saved: ${docRef.id} from ${email}`);
