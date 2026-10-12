@@ -49,12 +49,12 @@ function ContactFormContent() {
       const json = await res.json();
 
       if (!res.ok) {
-        throw new Error(json.message ?? 'Something went wrong.');
+        throw new Error(json.message ?? 'Unable to submit inquiry. Verify your connection or email hello@quzar.in directly.');
       }
 
       setFormState('success');
     } catch (err) {
-      const message = err instanceof Error ? err.message : 'Failed to send. Try emailing hello@quzar.in directly.';
+      const message = err instanceof Error ? err.message : 'Unable to submit inquiry. Verify your connection or email hello@quzar.in directly.';
       setErrorMsg(message);
       setFormState('error');
     }
@@ -246,7 +246,7 @@ function ContactFormContent() {
 
 export default function ContactPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-brand-primary">Loading...</div>}>
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-brand-primary font-mono text-xs uppercase tracking-[0.2em]">LOADING CONTACT FORM...</div>}>
       <ContactFormContent />
     </Suspense>
   );

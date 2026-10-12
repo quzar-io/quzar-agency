@@ -53,10 +53,10 @@ export function ServiceModal({ isOpen, onClose, title, description, features, se
             <div className="absolute top-4 right-4 z-20">
               <button
                 onClick={onClose}
-                className="px-3 py-1.5 rounded-sm bg-white/5 hover:bg-white/10 text-brand-text hover:text-white transition-colors text-xs font-semibold tracking-widest uppercase"
+                className="px-3 py-1.5 rounded-none bg-white/5 hover:bg-white/10 active:translate-y-[1px] text-brand-text hover:text-white transition-colors text-xs font-mono font-semibold tracking-widest uppercase cursor-pointer"
                 aria-label="Close modal"
               >
-                [ CLOSE ]
+                CLOSE
               </button>
             </div>
 

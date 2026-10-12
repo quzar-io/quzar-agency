@@ -23,8 +23,8 @@ export const projects: Project[] = [
     id: 'darpan360',
     title: 'Darpan360',
     category: 'AI SaaS / Chatbot Platform',
-    description: 'Managed Chatbot-as-a-Service platform with domain locking, multi-key Gemini/Groq failover, and embeddable iframe widgets.',
-    tech: ['React', 'Node.js', 'Express', 'Firebase Auth', 'Cloud Firestore', 'Gemini & Groq'],
+    description: 'Managed Chatbot-as-a-Service platform with domain authorization, resilient AI routing, and embeddable web widgets.',
+    tech: ['React', 'Node.js', 'Express', 'Firebase', 'LLM APIs'],
     image: '/assets/images/darpan360.png',
     images: [
       '/assets/images/screenshots/darpan360/Screenshot 2026-05-03 125336.png',
@@ -35,26 +35,26 @@ export const projects: Project[] = [
     liveLink: 'https://darpan.quzar.in',
     githubLink: 'https://github.com/PiyushRatan/OnlineChatbotIntegration',
     fullDescription:
-      'Darpan360 is a Chatbot-as-a-Service platform built to deploy domain-specific AI assistants on client websites. Businesses configure their assistant role, knowledge base, and approved domains in an operator dashboard, then embed a lightweight script widget with automatic AI key rotation and provider failover.',
+      'Darpan360 is a Chatbot-as-a-Service platform built to deploy domain-specific AI assistants on client websites. Businesses configure their assistant role, knowledge base, and approved domains in a centralized dashboard, then embed a lightweight script widget with high-availability AI routing.',
     features: [
-      'Embeddable iframe widget isolated from host website CSS conflicts',
-      'Smart API key rotator across Gemini Flash-Lite pool with automatic Groq Llama 3 failover on HTTP 429 limits',
-      'Strict dynamic CORS validation locking each bot to its approved client domains',
-      'Per-bot Firestore transaction rate limiting and automated 4-hour stale session cleanup',
-      'AI-assisted reference writer and 13+ guided business assistant personas'
+      'Embeddable web widget isolated from host website styling conflicts',
+      'High-availability AI response routing for consistent uptime under traffic spikes',
+      'Domain-level authorization locking each assistant to approved client websites',
+      'Built-in usage controls and automated session lifecycle management',
+      'AI-assisted knowledge writer and 13+ guided business assistant personas'
     ],
     caseStudy: [
       {
         title: 'Problem & Motivation',
-        body: 'Most chatbot demos look simple until they touch a production client domain. Real deployments require widget CSS isolation, strict origin checks so bots cannot be hijacked, session garbage collection, and automatic failover when AI APIs hit rate limits.'
+        body: 'Businesses need an easy way to deploy custom AI assistants trained on their own services and FAQs without managing complex AI infrastructure or risking widget styling conflicts on their existing websites.'
       },
       {
-        title: 'Architecture & System Design',
-        body: 'The platform splits dashboard control, widget runtime, and AI routing. Dynamic CORS checks validate incoming origins against each bot’s allowedDomains in Cloud Firestore. The AI engine loops through a pool of Gemini keys and hot-swaps to Groq Llama 3 if rate limits are hit.'
+        title: 'Product Experience',
+        body: 'The platform separates dashboard management from a lightweight embeddable widget runtime, allowing business owners to configure custom instructions, lock their assistant to authorized domains, and go live in minutes.'
       },
       {
         title: 'Outcome',
-        body: 'A production-ready Chatbot-as-a-Service system capable of powering customer support, reception, and lead-capture assistants across client websites with near-zero downtime.'
+        body: 'A production-ready Chatbot-as-a-Service system powering customer support, reception, and lead-capture assistants across client websites.'
       }
     ]
   },

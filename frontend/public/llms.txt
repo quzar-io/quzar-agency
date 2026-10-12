@@ -18,7 +18,7 @@ Quzar is an AI and full-stack product studio founded by Piyush Ratan. Quzar buil
 
 ## Featured Shipped Products & Client Systems
 
-- Darpan360 (https://darpan.quzar.in) — Managed Chatbot-as-a-Service platform with domain locking, Gemini/Groq failover, and embeddable widgets.
+- Darpan360 (https://darpan.quzar.in) — Managed Chatbot-as-a-Service platform with domain authorization, custom business personas, and embeddable web widgets.
 - Orlin AI (https://orlin-ai.web.app) — AI automation agency platform for real estate lead qualification and onboarding.
 - SDRP Inter College (https://sdrpintercollege.com) — Complete digital campus portal with admissions, academics, and local SEO.
 - Vaultera (https://vaultera.in) — Smart hardware & vault product platform.
@@ -32,5 +32,6 @@ Quzar is an AI and full-stack product studio founded by Piyush Ratan. Quzar buil
 - https://quzar.in/ — Home, services overview, and value proposition
 - https://quzar.in/services — Detailed AI & full-stack service offerings
 - https://quzar.in/work — Shipped products, client deployments, and engineering case studies
+- https://quzar.in/team — Sole operator dossier: Piyush Ratan (Founder & Principal Systems Architect, 1-person studio)
 - https://quzar.in/about — Studio story, timeline, and engineering philosophy
 - https://quzar.in/contact — Project inquiry and consultation booking

@@ -48,3 +48,67 @@
       transition: background-color 5000s ease-in-out 0s;
   }
 }
+
+/* Container query layout for Operator Dossier Card */
+.operator-card-container {
+  container-type: inline-size;
+}
+
+.operator-card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .operator-card-grid {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@supports (container-type: inline-size) {
+  @media (min-width: 640px) {
+    .operator-card-grid {
+      flex-direction: column;
+    }
+  }
+
+  @container (min-width: 520px) {
+    .operator-card-grid {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+}
+
+/* Content-based styling for Shipped Proof Cards */
+.proof-node-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.proof-node-card:has(img) {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.proof-node-card:not(:has(img)) {
+  border-style: dashed;
+}
+
+@supports not selector(:has(*)) {
+  .proof-node-card.has-image {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .proof-node-card:not(.has-image) {
+    border-style: dashed;
+  }
+}
+

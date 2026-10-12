@@ -46,9 +46,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             <div className="relative">
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 z-10 px-3 py-1.5 bg-brand-bg/70 border border-brand-border text-brand-heading hover:text-brand-primary transition-colors block backdrop-blur-md text-xs font-semibold tracking-widest uppercase cursor-pointer"
+                className="absolute top-4 right-4 z-10 px-3 py-1.5 bg-brand-bg/70 border border-brand-border text-brand-heading hover:text-brand-primary active:translate-y-[1px] transition-colors block backdrop-blur-md text-xs font-mono font-semibold tracking-widest uppercase cursor-pointer"
               >
-                [ CLOSE ]
+                CLOSE
               </button>
 
               <div className="h-64 md:h-96 w-full relative border-b border-brand-border overflow-hidden bg-brand-bg">
