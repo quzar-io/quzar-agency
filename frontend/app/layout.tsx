@@ -47,6 +47,42 @@ export const viewport: Viewport = {
   themeColor: '#09090b',
 };
 
+const quzarJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://quzar.in#organization',
+    name: 'Quzar',
+    alternateName: ['Quzar Agency', 'Quzar AI Studio'],
+    url: 'https://quzar.in',
+    email: 'hello@quzar.in',
+    description:
+      'Quzar is a premium AI and full-stack development agency founded by Piyush Ratan, specializing in AI-powered MVPs, Darpan360 chatbot platforms, and scalable digital products.',
+    founder: {
+      '@type': 'Person',
+      '@id': 'https://piyushratan.in#person',
+      name: 'Piyush Ratan',
+      url: 'https://piyushratan.in',
+    },
+    sameAs: [
+      'https://quzar.in',
+      'https://piyushratan.in',
+      'https://github.com/quzar-io',
+      'https://github.com/PiyushRatan',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': 'https://quzar.in#website',
+    name: 'Quzar',
+    url: 'https://quzar.in',
+    publisher: {
+      '@id': 'https://quzar.in#organization',
+    },
+  },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -54,6 +90,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM profile for Quzar" />
+        <link rel="alternate" type="application/json" href="/ai-profile.json" title="AI-readable profile for Quzar" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(quzarJsonLd) }}
+        />
+      </head>
       <body>
         <div className="min-h-screen flex flex-col relative selection:bg-brand-primary/30 selection:text-brand-heading overflow-x-hidden">
           <GalaxyBackground />

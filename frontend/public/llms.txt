@@ -1,0 +1,36 @@
+# Quzar — AI & Full-Stack Product Studio
+
+Canonical site: https://quzar.in
+Founder: Piyush Ratan (https://piyushratan.in)
+Chatbot Platform: https://darpan.quzar.in (Darpan360)
+Contact: hello@quzar.in
+
+## Summary
+
+Quzar is an AI and full-stack product studio founded by Piyush Ratan. Quzar builds AI-powered MVPs, Chatbot-as-a-Service systems (Darpan360), RAG pipelines, institutional portals, and high-performance web applications.
+
+## Core Services
+
+- AI-Powered MVPs & Custom LLM/RAG Pipelines
+- Managed AI Chatbots & Lead Automation (Darpan360)
+- Full-Stack Web Applications (Next.js, React, Node.js, Python, Firebase)
+- Technical SEO & Scalable Cloud Architecture
+
+## Featured Shipped Products & Client Systems
+
+- Darpan360 (https://darpan.quzar.in) — Managed Chatbot-as-a-Service platform with domain locking, Gemini/Groq failover, and embeddable widgets.
+- Orlin AI (https://orlin-ai.web.app) — AI automation agency platform for real estate lead qualification and onboarding.
+- SDRP Inter College (https://sdrpintercollege.com) — Complete digital campus portal with admissions, academics, and local SEO.
+- Vaultera (https://vaultera.in) — Smart hardware & vault product platform.
+- JMD Production & Casting (https://jmdagency.in) — High-performance talent & casting hub in Noida.
+- PCM Syllabus Tracker (https://pcm-syllabus-tracker-eight.vercel.app) — Spaced-repetition syllabus tracker for JEE & Class 11–12 students.
+- NCERTGPT — RAG-based Class 12 textbook study assistant.
+- CyberAlert — AI-assisted phishing and scam detector.
+
+## Important Pages
+
+- https://quzar.in/ — Home, services overview, and value proposition
+- https://quzar.in/services — Detailed AI & full-stack service offerings
+- https://quzar.in/work — Shipped products, client deployments, and engineering case studies
+- https://quzar.in/about — Studio story, timeline, and engineering philosophy
+- https://quzar.in/contact — Project inquiry and consultation booking

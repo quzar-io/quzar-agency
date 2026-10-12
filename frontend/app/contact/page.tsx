@@ -179,16 +179,19 @@ function ContactFormContent() {
 
           {/* Social Proof Integration */}
           <div className="mt-16 pt-12 border-t border-white/10 flex items-center gap-6">
-            <div className="flex -space-x-4">
-               {/* eslint-disable-next-line @next/next/no-img-element */}
-               <img className="w-12 h-12 rounded-full border-2 border-[#09090b] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="User" />
-               {/* eslint-disable-next-line @next/next/no-img-element */}
-               <img className="w-12 h-12 rounded-full border-2 border-[#09090b] object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop" alt="User" />
-               {/* eslint-disable-next-line @next/next/no-img-element */}
-               <img className="w-12 h-12 rounded-full border-2 border-[#09090b] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="User" />
+            <div className="flex -space-x-3">
+              <div className="w-11 h-11 rounded-full border-2 border-[#09090b] bg-brand-primary/20 text-white text-xs font-bold flex items-center justify-center">
+                OR
+              </div>
+              <div className="w-11 h-11 rounded-full border-2 border-[#09090b] bg-white/10 text-white text-xs font-bold flex items-center justify-center">
+                SD
+              </div>
+              <div className="w-11 h-11 rounded-full border-2 border-[#09090b] bg-brand-primary/30 text-white text-xs font-bold flex items-center justify-center">
+                JM
+              </div>
             </div>
             <div>
-              <p className="text-white font-semibold">Trusted by founders worldwide.</p>
+              <p className="text-white font-semibold">Trusted by real businesses, schools &amp; founders.</p>
               <div className="flex text-brand-primary text-sm mt-1">
                 ★ ★ ★ ★ ★
               </div>
@@ -204,15 +207,15 @@ function ContactFormContent() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="lg:col-span-5 flex flex-col gap-6"
         >
-          {/* Calendly Bento Card */}
+          {/* Consultation Bento Card */}
           <div className="p-8 rounded-sm border border-white/10 bg-white/5 backdrop-blur-sm hover:border-brand-primary/40 transition-colors flex flex-col">
             <div className="w-12 h-12 rounded-sm bg-brand-primary/20 flex items-center justify-center text-brand-primary mb-6">
               <Calendar className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Book a Consultation</h3>
-            <p className="text-brand-smoke mb-8">Skip the emails. Grab a 30-minute slot on my calendar to discuss your roadmap.</p>
+            <p className="text-brand-smoke mb-8">Skip the back-and-forth. Request a 30-minute strategy call directly to discuss your architecture and roadmap.</p>
             <OutlineButton 
-              onClick={() => alert('Calendly placeholder modal opened!')}
+              href="mailto:hello@quzar.in?subject=30-Minute%20Strategy%20Call%20Request&body=Hi%20Piyush%2C%0A%0AI'd%20like%20to%20schedule%20a%2030-minute%20call%20to%20discuss%20a%20project.%0A%0APreferred%20date%2Ftime%3A%20%0AProject%20brief%3A%20"
               className="mt-auto w-full py-4"
             >
               Schedule a Call

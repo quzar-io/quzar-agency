@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://quzar.in#organization",
+  "name": "Quzar",
+  "alternateName": ["Quzar Agency", "Quzar AI Studio"],
+  "url": "https://quzar.in",
+  "email": "hello@quzar.in",
+  "description": "Quzar is an AI and full-stack development studio founded by Piyush Ratan, specializing in AI-powered MVPs, Darpan360 chatbot systems, RAG pipelines, and full-stack web products.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://piyushratan.in#person",
+    "name": "Piyush Ratan",
+    "url": "https://piyushratan.in",
+    "sameAs": [
+      "https://piyushratan.in",
+      "https://github.com/PiyushRatan",
+      "https://x.com/Piyush__Ratan",
+      "https://linkedin.com/in/piyushratan"
+    ]
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "RAG Systems",
+    "AI Chatbots",
+    "Darpan360",
+    "Full-Stack Web Development",
+    "Next.js",
+    "React",
+    "Node.js",
+    "Python",
+    "Firebase",
+    "Technical SEO"
+  ],
+  "sameAs": [
+    "https://quzar.in",
+    "https://piyushratan.in",
+    "https://github.com/quzar-io",
+    "https://github.com/PiyushRatan"
+  ]
+}

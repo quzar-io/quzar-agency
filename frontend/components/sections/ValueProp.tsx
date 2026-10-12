@@ -42,24 +42,17 @@ export function ValueProp() {
           MVPs are just the start. Top organizations know that scaling also depends on solid architecture, performance, and user experience. Quzar helps startups put all these pieces together—in one place.
         </p>
         
-        {/* Logos grid placeholder matching the 3x2 grid in the image roughly */}
-        <div className="grid grid-cols-3 gap-y-10 gap-x-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 items-center justify-items-start">
-           <div className="text-xl md:text-2xl font-bold font-sans tracking-tighter text-white">stripe</div>
-           <div className="text-xl md:text-2xl font-bold font-sans tracking-tight text-white flex items-center gap-2">
-             <div className="w-6 h-6 border-2 border-white rounded-full flex items-center justify-center">
-               <div className="w-2 h-2 bg-white rounded-full"></div>
-             </div>
-             twilio
+        {/* Real shipped platforms & client deployments */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-8 opacity-85 transition-all duration-500 items-center justify-items-start">
+           <div className="text-lg md:text-xl font-bold font-sans tracking-tight text-white">Darpan360</div>
+           <div className="text-lg md:text-xl font-bold font-sans tracking-tight text-white">Orlin AI</div>
+           <div className="text-lg md:text-xl font-bold font-sans tracking-tight text-white">Vaultera</div>
+           <div className="text-sm md:text-base font-semibold font-sans text-white leading-tight uppercase tracking-wider">
+             SDRP<br/>Inter College
            </div>
-           <div className="text-xl md:text-2xl font-bold font-sans tracking-tighter text-white flex items-center gap-1">
-             <div className="w-6 h-6 border-[3px] border-white rounded-full"></div>
-             Spotify
-           </div>
-           
-           <div className="text-2xl md:text-4xl font-extrabold font-serif italic text-white tracking-tighter">3M</div>
-           <div className="text-xl md:text-2xl font-bold font-serif text-white tracking-widest">P&G</div>
-           <div className="text-sm md:text-base font-semibold font-sans text-white leading-none uppercase">
-             American<br/>Airlines
+           <div className="text-lg md:text-xl font-bold font-serif text-white tracking-widest">JMD Agency</div>
+           <div className="text-sm md:text-base font-semibold font-sans text-white leading-tight uppercase tracking-wider">
+             Brothers<br/>Production
            </div>
         </div>
       </motion.div>
